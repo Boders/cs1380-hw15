@@ -1,0 +1,45 @@
+Part A:
+
+What does a pointer store? How is that different from storing the price itself?
+
+    - Pointers store the memory address of vars (variables). Storing the price itself only gives the function a copy of the var's value, but the pointer need to change the original value, so having the location address is good for when the var value needs to be changed.
+
+After int *tag = &latte;, what do tag, *tag, and &latte each mean?
+
+    - tag stores the memory address of latte. *tag means the value stored at that address, so it would be the current latte value. &latte means the memory address of the latte var, the address itself.
+
+Why is it undefined behavior to dereference an uninitialized pointer? What should you initialize a pointer to if it does not yet have a target?
+
+    - Uninitialized pointers don't know where to point to so the address points to an unknown address. dereference can cause undefined behaviors meaning that it will try to access random or invalid memory. If the pointer does not have a target then initialize it to NULL
+
+
+
+Part B:
+
+Why does retarget take int ** instead of int *?
+
+    - The retarget needs to change the pointer not the var it points to. int ** address of the pointer to change what the pointer points to. int * could change the var value, but not the pointer itself.
+
+Why can print_price take const int * while set_price cannot?
+
+    - print_price only needs to read the price and print it, so it doesn't need permission to change int *. set_price can't b/c it needs to change the value of the original price using a pointer.
+
+In your array demo, why does p + 1 not add one byte?
+
+    - B/c the arithmetic pointer moves by the size of the data type. It does not add one byte  b/c p is an int * it moves to the next array.
+
+
+
+Part C:
+
+Name one file that should stay out of Git for this project, and why.
+
+    - When compiling the file together to run this program you have to use .gitignore that creates a new file called price so that you can run one file at a time that actually runs the whole program, but this file should be recreated every time you need to run the program again.
+
+Why push to the remote in addition to uploading hw15.zip on Canvas?
+
+    - Pushing to remote is better b/c it is a copy of your work and keeps a record of the commit history. Canvas is just for submitting the assignment while a remote repo is all the work that I have done for history logs.
+
+
+
+Git Commit Evidence:
