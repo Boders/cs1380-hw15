@@ -43,3 +43,26 @@ Why push to the remote in addition to uploading hw15.zip on Canvas?
 
 
 Git Commit Evidence:
+git status
+
+
+
+On branch main
+
+Your branch is up to date with 'origin/main'.
+
+
+
+nothing to commit, working tree clean
+
+
+
+git log --oneline
+
+
+
+bc9b734 (HEAD -> main, origin/main) Fix gitignore
+
+80f1ddb Add pointer writeup and gitignore
+
+12e857a Add pointer price functions and demo
